@@ -1,0 +1,51 @@
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15rem;
+}
+header nav ul {
+  display: flex;
+  column-gap: 2rem;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  color: #222;
+}
+
+header nav ul li a:hover {
+  color: orange;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header nav {
+    margin-top: 2rem;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    row-gap: 32px;
+    order: 2;
+  }
+
+  .search {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+}
+

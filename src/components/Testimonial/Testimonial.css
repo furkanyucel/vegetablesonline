@@ -1,0 +1,59 @@
+.testimonial {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial article {}
+.testimonial article:nth-last-of-type(2) img {
+  margin: 0 auto;
+}
+
+.testimonial article h2 {
+  margin-top: 0.5rem;
+  font-size: 48px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+.testimonial article:nth-last-child(1) {
+  width: 560px;
+}
+.testimonial article:nth-last-child(1) .profile {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-end;
+  column-gap: 2rem;
+}
+.testimonial article:nth-last-child(1) .profile img {
+  width: 200px;
+}
+.testimonial article:nth-last-child(1) .profile .info {}
+.testimonial article:nth-last-child(1) .profile .info .name {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 900;
+}
+.testimonial article:nth-last-child(1) .profile .info .title {
+  font-size: 18px;
+  color: orange;
+}
+.testimonial article:nth-last-child(1) .profile p {
+  width: 100%;
+  font-size: 18px;
+}
+
+@media (max-width: 425px) {
+  .testimonial article:nth-last-child(1) {
+    width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .testimonial article:nth-last-child(1) {
+    width: 250px;
+  }
+}

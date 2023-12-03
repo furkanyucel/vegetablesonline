@@ -1,0 +1,29 @@
+.vegetables {}
+
+.vegetables article {
+  margin-bottom: 5rem;
+}
+
+.vegetables article h2 {
+  margin-top: 0.5rem;
+  font-size: 48px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+.vegetables article p {
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+.vegetables article:nth-last-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.vegetablesBtn {
+  margin-top: 3rem;
+}

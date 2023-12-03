@@ -1,0 +1,146 @@
+.hero {}
+
+.hero .heroSlider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 2rem;
+}
+.hero .heroSlider .heroImg {}
+
+.hero .heroSlider .heroImg figure {}
+
+.hero .heroSlider .heroImg figure img {
+  width: 100%;
+  max-width: 550px;
+}
+
+.hero .heroSlider .heroInfo {
+  text-align: left;
+}
+
+.hero .heroSlider .heroInfo h1 {
+  color: #222;
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero .heroSlider .heroInfo h1 span {
+  margin-top: 1rem;
+  display: block;
+  color: orange;
+}
+
+.hero .heroSlider .heroInfo p {
+  margin-top: 2rem;
+  width: 400px;
+  font-size: 18px;
+  line-height: 1.6rem;
+}
+
+.hero .heroSlider .heroInfo .heroButtons {
+  margin-top: 3rem;
+  display: flex;
+  column-gap: 1rem;
+}
+
+/* .hero .heroSlider .heroInfo .heroButtons .heroBtn {
+  padding: 1rem 3rem;
+  border: none;
+  background: orange !important;
+  color: #f9f9f9;
+  font-size: 16px;
+} */
+
+/* .hero .heroSlider .heroInfo .heroButtons button:nth-last-child(1) {
+  margin-left: 1rem;
+  background-color: #222;
+} */
+
+/* .hero .heroSlider .heroInfo .heroButtons button:hover {
+  opacity: 0.7;
+} */
+
+.arrows {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.arrows img:nth-last-child(2) {
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 100%;
+}
+
+.arrows img:nth-last-child(2):hover {
+  background: orange;
+}
+.arrows img:nth-last-child(1) {
+  margin-left: 1rem;
+  background: orange;
+  padding: 1.5rem;
+  border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .hero .heroSlider .heroInfo h1 {
+    font-size: 50px;
+  }
+
+  .hero .heroSlider .heroInfo p {
+    width: 330px;
+  }
+}
+
+@media (max-width: 425px) {
+  .heroSlider {
+    flex-direction: column;
+  }
+
+  .hero .heroSlider .heroInfo p {
+    width: 100%;
+  }
+
+  .hero .heroSlider .heroInfo .heroButtons button {
+    width: 100%;
+  }
+
+  .hero .heroSlider .heroInfo .heroButtons button:nth-last-child(1) {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .arrows {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .heroSlider {
+    flex-direction: column;
+  }
+
+  .hero .heroSlider .heroInfo h1 {
+    font-size: 40px;
+  }
+
+  .hero .heroSlider .heroInfo .heroButtons {
+    margin-top: 3rem;
+  }
+
+  .hero .heroSlider .heroInfo .heroButtons button {
+    width: 100%;
+    padding: 1rem auto;
+  }
+
+  .hero .heroSlider .heroInfo .heroButtons button:nth-last-child(1) {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    display: flex;
+  }
+}
+

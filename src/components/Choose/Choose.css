@@ -1,0 +1,34 @@
+.choose {
+  background-color: #f9f9f9;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.choose article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose article h2 {
+  margin-top: 0.5rem;
+  font-size: 48px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+.choose figure img {
+  width: 90%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.choose p {
+  width: 100%;
+  max-width: 500px;
+  font-size: 18px;
+}
+
+.chooseBtn {
+  margin-top: 3rem;
+}
